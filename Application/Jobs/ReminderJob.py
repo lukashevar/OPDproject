@@ -1,12 +1,10 @@
-# Этот код вызывается ReminderScheduler. Его надо переделать под вызов тг-ботом
-# должен возвращать дто, которые будут использоваться для отправки уведомлений
 import asyncio
-from datetime import datetime
-from Core.Interfaces.ILessonRepository import ILessonRepository
-from Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
-from Core.Interfaces.IReminderRepository import IReminderRepository
-from Core.UseCases.Reminder.ScheduleRemindersUseCase import ScheduleRemindersUseCase
-from Core.Entities.Reminder import Reminder
+from datetime import datetime, timedelta
+from OPDproject.Core.Interfaces.ILessonRepository import ILessonRepository
+from OPDproject.Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
+from OPDproject.Core.Interfaces.IReminderRepository import IReminderRepository
+from OPDproject.Core.UseCases.Reminder.ScheduleRemindersUseCase import ScheduleRemindersUseCase
+from OPDproject.Core.Entities.Reminder import Reminder
 
 class ReminderJob:
     def __init__(
@@ -22,24 +20,20 @@ class ReminderJob:
 
     async def run(self):
         # Создаем новые напоминания
-        reminders = await self._use_case.execute(hours_ahead=24)
+        reminders = await self._use_case.execute(hours_ahead=1)  # Напоминаем за 1 час
         print(f"Создано напоминаний: {len(reminders)}")
 
-        # Отправляем напоминания, если наступило их время
-        now = datetime.now()
-        pending_reminders = await self._reminder_repo.get_pending_reminders_async(now)
+        # Возвращаем список DTO, которые будут использоваться для отправки уведомлений
+        notifications = []
+        for reminder in reminders:
+            student_id = reminder.student_id
+            trigger_time = reminder.trigger_time
+            lesson_id = reminder.lesson_id
 
-        if not pending_reminders:
-            print("Нет напоминаний для отправки.")
-            return
+            notifications.append({
+                'student_id': student_id,
+                'lesson_id': lesson_id,
+                'trigger_time': trigger_time
+            })
 
-        for reminder in pending_reminders:
-            sent = await self._send_notification(reminder)
-            if sent:
-                await self._reminder_repo.mark_as_sent_async(reminder.self_id)
-                print(f"✅ Напоминание {reminder.self_id} отправлено и обновлено.")
-
-    async def _send_notification(self, reminder: Reminder) -> bool:
-        # TODO: Подключить реальную систему уведомлений
-        print(f"📨 Отправка уведомления студенту {reminder.student_id} (Reminder ID: {reminder.self_id})")
-        return True
+        return notifications
