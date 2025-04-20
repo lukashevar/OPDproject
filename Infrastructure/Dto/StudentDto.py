@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
-from Infrastructure.Config import Base
+from OPDproject.Infrastructure.Config import Base
 
 class StudentDto(Base):
     __tablename__ = 'students'

@@ -2,10 +2,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, update, delete, and_
 from datetime import datetime
 from typing import List, Optional
-from Core.Entities.Reminder import Reminder
-from Core.Interfaces.IReminderRepository import IReminderRepository
-from Infrastructure.Dto.ReminderDto import ReminderDto
-from Infrastructure.Mappers.ReminderMapper import ReminderMapper
+from OPDproject.Core.Entities.Reminder import Reminder
+from OPDproject.Core.Interfaces.IReminderRepository import IReminderRepository
+from OPDproject.Infrastructure.Dto.ReminderDto import ReminderDto
+from OPDproject.Infrastructure.Mappers.ReminderMapper import ReminderMapper
 
 class ReminderRepository(IReminderRepository):
     def __init__(self, session: AsyncSession):

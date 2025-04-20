@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Core.Entities.Student import Student
+from OPDproject.Core.Entities.Student import Student
 from typing import List, Optional
 
 class IStudentRepository(ABC):

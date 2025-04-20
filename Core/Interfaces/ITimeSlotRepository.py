@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Core.Entities.TimeSlot import TimeSlot
+from OPDproject.Core.Entities.TimeSlot import TimeSlot
 from typing import List, Optional
 from datetime import date
 

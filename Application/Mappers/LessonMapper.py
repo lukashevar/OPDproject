@@ -1,5 +1,5 @@
-from Core.Entities.Lesson import Lesson
-from Application.Respones.Lesson.ResponseLessonForSchedule import ResponseLessonForSchedule
+from OPDproject.Core.Entities.Lesson import Lesson
+from OPDproject.Application.Respones.Lesson.ResponseLessonForSchedule import ResponseLessonForSchedule
 from datetime import datetime
 
 class LessonMapper:

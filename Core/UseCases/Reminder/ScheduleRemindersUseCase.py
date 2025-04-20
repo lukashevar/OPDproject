@@ -1,10 +1,10 @@
 from datetime import datetime, timedelta
 from typing import List
-from Core.Entities.Lesson import Lesson
-from Core.Entities.Reminder import Reminder
-from Core.Interfaces.ILessonRepository import ILessonRepository
-from Core.Interfaces.IReminderRepository import IReminderRepository
-from Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
+from OPDproject.Core.Entities.Lesson import Lesson
+from OPDproject.Core.Entities.Reminder import Reminder
+from OPDproject.Core.Interfaces.ILessonRepository import ILessonRepository
+from OPDproject.Core.Interfaces.IReminderRepository import IReminderRepository
+from OPDproject.Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
 
 
 class ScheduleRemindersUseCase:

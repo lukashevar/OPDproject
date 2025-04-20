@@ -1,4 +1,4 @@
-from Infrastructure.Config import Base
+from OPDproject.Infrastructure.Config import Base
 from sqlalchemy import Column, String, Integer, ForeignKey
 
 class LessonDto(Base):

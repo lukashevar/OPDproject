@@ -1,7 +1,7 @@
-from Core.Entities.Student import Student
-from Application.Respones.Student.ResponseStudentInitial import ResponseStudentInitial
-from Application.Respones.Student.ResponseParentInitial import ResponseParentInitial
-from Application.Respones.Student.ResponseStudentBriefForParent import ResponseStudentBriefForParent
+from OPDproject.Core.Entities.Student import Student
+from OPDproject.Application.Respones.Student.ResponseStudentInitial import ResponseStudentInitial
+from OPDproject.Application.Respones.Student.ResponseParentInitial import ResponseParentInitial
+from OPDproject.Application.Respones.Student.ResponseStudentBriefForParent import ResponseStudentBriefForParent
 from typing import List
 
 class StudentMapper:

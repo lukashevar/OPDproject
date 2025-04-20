@@ -1,7 +1,7 @@
 from datetime import datetime, date, time, timedelta
 from typing import List
-from Core.Entities.TimeSlot import TimeSlot
-from Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository  # Абстракция репозитория
+from OPDproject.Core.Entities.TimeSlot import TimeSlot
+from OPDproject.Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository  # Абстракция репозитория
 
 def generate_slots_for_period(start_date: date, end_date: date) -> List[TimeSlot]:
     """

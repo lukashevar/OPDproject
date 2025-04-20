@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Date, Time, Boolean, Integer
-from Infrastructure.Config import Base
+from OPDproject.Infrastructure.Config import Base
 
 
 class TimeSlotDto(Base):

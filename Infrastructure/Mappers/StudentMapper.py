@@ -1,5 +1,5 @@
-from Core.Entities.Student import Student
-from Infrastructure.Dto.StudentDto import StudentDto
+from OPDproject.Core.Entities.Student import Student
+from OPDproject.Infrastructure.Dto.StudentDto import StudentDto
 
 class StudentMapper:
     @staticmethod

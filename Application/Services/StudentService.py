@@ -1,7 +1,7 @@
-from Core.Interfaces.IStudentRepository import IStudentRepository
-from Application.Mappers.StudentMapper import StudentMapper
-from Application.Respones.Student.ResponseStudentInitial import ResponseStudentInitial
-from Application.Respones.Student.ResponseParentInitial import ResponseParentInitial
+from OPDproject.Core.Interfaces.IStudentRepository import IStudentRepository
+from OPDproject.Application.Mappers.StudentMapper import StudentMapper
+from OPDproject.Application.Respones.Student.ResponseStudentInitial import ResponseStudentInitial
+from OPDproject.Application.Respones.Student.ResponseParentInitial import ResponseParentInitial
 from typing import Optional
 
 class StudentService:

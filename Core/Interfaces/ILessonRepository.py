@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Core.Entities.Lesson import Lesson
+from OPDproject.Core.Entities.Lesson import Lesson
 from typing import List, Optional
 
 class ILessonRepository(ABC):

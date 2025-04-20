@@ -1,10 +1,10 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, update, delete
 from typing import List, Optional
-from Core.Entities.Teacher import Teacher
-from Core.Interfaces.ITeacherRepository import ITeacherRepository
-from Infrastructure.Dto.TeacherDto import TeacherDto
-from Infrastructure.Mappers.TeacherMapper import TeacherMapper
+from OPDproject.Core.Entities.Teacher import Teacher
+from OPDproject.Core.Interfaces.ITeacherRepository import ITeacherRepository
+from OPDproject.Infrastructure.Dto.TeacherDto import TeacherDto
+from OPDproject.Infrastructure.Mappers.TeacherMapper import TeacherMapper
 
 class TeacherRepository(ITeacherRepository):
     def __init__(self, session: AsyncSession):

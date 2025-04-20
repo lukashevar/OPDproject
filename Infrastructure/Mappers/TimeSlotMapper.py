@@ -1,5 +1,5 @@
-from Core.Entities.TimeSlot import TimeSlot
-from Infrastructure.Dto.TimeSlotDto import TimeSlotDto
+from OPDproject.Core.Entities.TimeSlot import TimeSlot
+from OPDproject.Infrastructure.Dto.TimeSlotDto import TimeSlotDto
 
 class TimeSlotMapper:
     @staticmethod

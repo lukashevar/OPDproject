@@ -1,5 +1,5 @@
-from Core.Entities.Reminder import Reminder
-from Infrastructure.Dto.ReminderDto import ReminderDto
+from OPDproject.Core.Entities.Reminder import Reminder
+from OPDproject.Infrastructure.Dto.ReminderDto import ReminderDto
 
 class ReminderMapper:
     @staticmethod

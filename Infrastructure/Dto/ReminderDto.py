@@ -1,5 +1,5 @@
-from Infrastructure.Config import Base
-from Infrastructure.DBtypes import MinuteInterval
+from OPDproject.Infrastructure.Config import Base
+from OPDproject.Infrastructure.DBtypes import MinuteInterval
 from sqlalchemy import Column, Integer, Boolean, DateTime, ForeignKey
 
 

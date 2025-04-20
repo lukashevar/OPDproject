@@ -1,10 +1,10 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, update, delete
 from typing import List, Optional
-from Core.Entities.Student import Student
-from Core.Interfaces.IStudentRepository import IStudentRepository
-from Infrastructure.Dto.StudentDto import StudentDto
-from Infrastructure.Mappers.StudentMapper import StudentMapper
+from OPDproject.Core.Entities.Student import Student
+from OPDproject.Core.Interfaces.IStudentRepository import IStudentRepository
+from OPDproject.Infrastructure.Dto.StudentDto import StudentDto
+from OPDproject.Infrastructure.Mappers.StudentMapper import StudentMapper
 
 class StudentRepository(IStudentRepository):
     def __init__(self, session: AsyncSession):

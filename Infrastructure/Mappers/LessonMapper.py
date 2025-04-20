@@ -1,5 +1,5 @@
-from Core.Entities.Lesson import Lesson
-from Infrastructure.Dto.LessonDto import LessonDto
+from OPDproject.Core.Entities.Lesson import Lesson
+from OPDproject.Infrastructure.Dto.LessonDto import LessonDto
 
 class LessonMapper:
     @staticmethod

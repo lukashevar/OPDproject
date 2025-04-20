@@ -1,5 +1,5 @@
-from Core.Entities.Teacher import Teacher
-from Infrastructure.Dto.TeacherDto import TeacherDto
+from OPDproject.Core.Entities.Teacher import Teacher
+from OPDproject.Infrastructure.Dto.TeacherDto import TeacherDto
 
 class TeacherMapper:
     @staticmethod

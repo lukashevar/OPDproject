@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from Core.Entities.Teacher import Teacher
+from OPDproject.Core.Entities.Teacher import Teacher
 from typing import List, Optional
 
 class ITeacherRepository(ABC):

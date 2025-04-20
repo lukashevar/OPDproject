@@ -9,7 +9,7 @@ from typing import Sequence, Union
 
 from alembic import op
 import sqlalchemy as sa
-from Infrastructure.DBtypes import MinuteInterval
+from OPDproject.Infrastructure.DBtypes import MinuteInterval
 
 
 # revision identifiers, used by Alembic.

@@ -1,8 +1,8 @@
-from Core.Interfaces.ILessonRepository import ILessonRepository
-from Application.Respones.Lesson.ResponseLessonForSchedule import ResponseLessonForSchedule
-from Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
-from Application.Mappers.LessonMapper import LessonMapper
-from Core.Interfaces.ITeacherRepository import ITeacherRepository
+from OPDproject.Core.Interfaces.ILessonRepository import ILessonRepository
+from OPDproject.Application.Respones.Lesson.ResponseLessonForSchedule import ResponseLessonForSchedule
+from OPDproject.Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
+from OPDproject.Application.Mappers.LessonMapper import LessonMapper
+from OPDproject.Core.Interfaces.ITeacherRepository import ITeacherRepository
 from datetime import datetime
 from typing import List
 

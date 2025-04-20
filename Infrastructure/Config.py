@@ -20,8 +20,8 @@ async_session_factory = async_sessionmaker(
 
 Base = declarative_base()
 
-from Infrastructure.Dto.StudentDto import StudentDto
-from Infrastructure.Dto.TeacherDto import TeacherDto
-from Infrastructure.Dto.LessonDto import LessonDto
-from Infrastructure.Dto.TimeSlotDto import TimeSlotDto
-from Infrastructure.Dto.ReminderDto import ReminderDto
+from OPDproject.Infrastructure.Dto.StudentDto import StudentDto
+from OPDproject.Infrastructure.Dto.TeacherDto import TeacherDto
+from OPDproject.Infrastructure.Dto.LessonDto import LessonDto
+from OPDproject.Infrastructure.Dto.TimeSlotDto import TimeSlotDto
+from OPDproject.Infrastructure.Dto.ReminderDto import ReminderDto

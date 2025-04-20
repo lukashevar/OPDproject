@@ -2,7 +2,7 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import List, Optional
-from Core.Entities.Reminder import Reminder
+from OPDproject.Core.Entities.Reminder import Reminder
 
 class IReminderRepository(ABC):
     @abstractmethod

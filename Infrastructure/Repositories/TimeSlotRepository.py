@@ -3,10 +3,10 @@ from datetime import date
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, update, delete, func, insert
 from typing import List, Optional
-from Core.Entities.TimeSlot import TimeSlot
-from Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
-from Infrastructure.Dto.TimeSlotDto import TimeSlotDto
-from Infrastructure.Mappers.TimeSlotMapper import TimeSlotMapper
+from OPDproject.Core.Entities.TimeSlot import TimeSlot
+from OPDproject.Core.Interfaces.ITimeSlotRepository import ITimeSlotRepository
+from OPDproject.Infrastructure.Dto.TimeSlotDto import TimeSlotDto
+from OPDproject.Infrastructure.Mappers.TimeSlotMapper import TimeSlotMapper
 
 class TimeSlotRepository(ITimeSlotRepository):
     def __init__(self, session: AsyncSession):
